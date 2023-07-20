@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+* {
+    font-family: "Cabin", sans-serif;
+    color: white;
+}
+
+.body {
+    background-color: black !important;
+}
+
+.input-container {
+    border: 2px solid black;
+    height: 200px !important;
+    width: 300px ; 
+    margin: 2rem !important;
+    padding: 10px !important;
+    box-shadow: 3px 3px 3px 3px  green !important;
+    border-radius: 10px !important;
+}
+.big-container {
+    align-items: center !important;
+    /* border: 2px solid white; */
+    padding: 50px !important;
+}
+.cat-container {
+    /* border: 2px solid white; */
+    padding: 50px !important;
+    display: flex !important;
+    margin-left: 300px;
+    
+}
+.expense-container{
+    /* border: 2px solid white; */
+    margin-left: 380px;
+}
+.amount-container {
+    /* border: 2px solid white; */
+    align-items: center !important;
+    padding: 20px !important;
+    margin-left: 800px !important;
+    width: 600px !important;
+}
+.table-container {
+     /* border: 2px solid white;  */
+    padding: 20px !important;
+    margin-left: 830px !important;
+    width: 600px !important;
+}
+button {
+    margin: 1.5rem !important;
+    height: 3rem !important;
+    width: 5rem !important;
+    background-color: transparent !important;
+    border: 3px solid white !important;
+    color: white !important;
+    border-radius: 12px !important;
+  }
+.btn {
+    border: 3px solid white !important;
+    height: 3rem !important;
+    width: 5rem !important;
+    background-color: transparent !important;
+    color: white !important;
+    border-radius: 12px !important;
+}
+.amount-input {
+align-items: center !important;
+margin: 10px !important;
+margin-left: 90px !important;
+width: 300px !important;
+border-radius: 10px !important;
+box-shadow: 3px 3px 3px green !important;
+}
+.button {
+    color: white !important;
+    border-radius: 10px !important;
+    box-shadow: 3px 3px 3px green !important;
+    transition: 400ms all !important;
+    align-items: center !important;
+}
+.button:hover {
+    transition: 1s !important;
+    transform: 1s !important;
+    background-color: green !important;
+    box-shadow: 3px 3px 3px grey !important;
+    color: black !important;
+}
+
+h4 {
+    color: white !important;
+    font-size: 2.5rem !important;
+    font-weight: 600px !important;
+  }
+  
+  .span {
+    color: green !important;
+    width: 70px;
+    height: 70px;
+    font-size: larger;
+  }
+
+
+.heading {
+    color: white !important;
+    font-size: medium !important;
+    text-align: center !important;
+}
+.main-heading {
+    text-align: center !important;
+    color: white !important;
+    font-size: "Cabin", sans-serif !important;
+}
+
+.nav {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 57rem !important;
+    margin-left: 0rem !important;
+  }
+
+.input {
+align-items: center !important;
+margin: 10px !important;
+margin-left: 90px !important;
+width: 200px !important;
+border-radius: 10px !important;
+box-shadow: 3px 3px 3px green !important;
+/* text-shadow: 3px 3px grey; */
+}
+.span-input {
+    align-items: center !important;
+margin: 50px !important;
+margin-left: 90px !important;
+width: 800px !important;
+height: 800px !important;
+background-color: white !important;
+border-radius: 8px !important;
+box-shadow: 3px 3px 3px green !important;
+}
+.table-heading {
+ text-align: center !important;
+ color: white !important;
+ padding: 10px !important;
+}
+.drop-down {
+    border: 2px solid white !important;
+    background-color: green !important;
+}
+
+.heading {
+    margin-top: 2rem !important;
+    font-size: 1.6rem !important;
+}
+
+/* footer */
+footer{
+    background-color: #000000;
+    margin-top: 4rem;
+    
+  }
+  
+  .footer-content{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .logo a img{
+    max-width: 200px;
+  }
+  
+  .contact h3, .subscribe h3, .links h3{
+    font-size: 30px;
+    /* font-weight: 500; */
+  }
+  
+  .contact h5
+  {
+    font-size: 17px;
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    /* padding-inline: 5px; */
+  }
+  
+  .contact h5 i{
+    color: #ffffff;
+  }
+  
+  .contact h5 i:hover{
+    transform: scale(1.1);
+  }
+  
+  .socials h5{
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  
+  .socials i{
+    font-size: 25px;
+    margin-block: 10px;
+  }
+  
+  .socials i:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+  }
+  
+  .contact h3::after{
+    content: "";
+    height: 2px;
+    width: 15%;
+    background-color: black;
+    display: block;
+  }
+  
+  .links h3::after{
+    content: "";
+    height: 2px;
+    width: 50%;
+    background-color: black;
+    display: block;
+    /* margin-top: 40px; */
+  }
+  
+  .subscribe h3::after{
+    content: "";
+    height: 2px;
+    width: 10%;
+    background-color: black;
+    display: block;
+  }
+  
+  ul li{
+    list-style: none;
+  }
+  
+  .links a{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.3;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-block: 10px;
+  }
+  
+  .links a:hover{
+    border-bottom: 1px solid black;
+    width: 100%;
+    transition: 0.4s ;
+  }
+  
+  .socials  ul{
+    display: flex;
+    gap: 15px;
+  }
+  
+  .subscribe p{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 530;
+  }
+  
+  .subscribe input{
+    width: 60%;
+    padding: 10px 15px;
+    border: 1px solid black;
+    background: #d9d9d9;
+    color: rgb(255, 249, 249);
+    margin-top: 30px;
+  }
+  
+  .subscribe button{
+    position: absolute;
+    background: #333;
+    padding: 10px 15px;
+    border: none;
+    /* margin-inline: 5px; */
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .subscribe button i{
+    color: white;
+    font-size: 17px;
+  
+    /* transform: rotate(-5deg); */
+  }
+  
+  .subscribe button i:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+  }
+  
+  .copyright{
+    background: green;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+  }

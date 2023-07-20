@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/table.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <div class="nav">
+      <a href="/index.html"><button type="button" class="back">back</button></a>
+      <i
+        ><h4 class="heading">
+          Dollar<span class="span"><b style="color: green;">$ense</b></span>
+        </h4></i
+      >
+    </div>
+    <main>
+      <div class="big-container">
+        <h1 class="main-heading">Monthly Budget Calculator</h1>
+        <div class="amount-container">
+          <label  class="heading" for="income">Monthly Income:</label>
+          <input
+            class="amount-input"
+            type="number"
+            id="income"
+            placeholder="R0.00"
+            style="color: black;"
+          />
+        </div>
+        <div class="cat-container">
+          <div class="">
+            <div class="input-container">
+              <h3 class="heading">Fixed Expenses</h3>
+              <hr style="color: white; width: 12rem; margin-left: 35px" />
+              <span class="span-input" style="color: black;" id="fixed-expenses-amount"></span>
+            </div>
+          </div>
+          <div class="">
+            <div class="input-container">
+              <h3 class="heading">Investments</h3>
+              <hr style="color: white; width: 12rem; margin-left: 35px" />
+              <span class="span-input" style="color: black;" id="investments-amount"></span>
+            </div>
+          </div>
+          <div class="">
+            <div class="input-container">
+              <h3 class="heading">Entertainment</h3>
+              <hr style="color: white; width: 12rem; margin-left: 35px" />
+              <span class="span-input" style="color: black;" id="go-wild-amount"></span>
+            </div>
+          </div>
+          <div class="">
+            <div class="input-container">
+              <h3 class="heading">Savings</h3>
+              <hr style="color: white; width: 12rem; margin-left: 35px" />
+              <span class="span-input" style="color: black;" id="savings-amount"></span>
+            </div>
+          </div>
+        </div>
+        <div class="expense-container">
+            <label class="heading" for="expense-name">Expense Name:</label>
+            <input
+              class="input"
+              type="text"
+              id="expense-name"
+              placeholder="Enter the expense name"
+              style="color: black;"
+            />
+            <label class="heading" for="expense-amount">Expense Amount:</label>
+            <input
+              class="input"
+              type="number"
+              id="expense-amount"
+              placeholder="Enter the expense amount"
+              style="color: black;"
+            />
+            <label  class="heading" for="expense-category">Expense Category:</label>
+            <select style=" background-color: black;" id="expense-category">
+              <option  class="button" value="fixed-expenses">Fixed Expenses</option>
+              <option  class="button" value="investments">Investments</option>
+              <option  class="button" value="go-wild">Entertainment</option>
+              <option  class="button" value="savings">Savings</option>
+            </select>
+            <button class="button" onclick="addExpense()">Add Expense</button>
+        </div>
+        
+        <div class="table-container">
+          <h2 class="heading">Table</h2>
+          <table id="expense-outcomes-table">
+            <tr>
+              <th class="table-heading">Expense Name</th>
+              <th class="table-heading">Expense Amount</th>
+              <th class="table-heading">Category</th>
+              <th class="table-heading">action</th>
+            </tr>
+          </table>
+          <button class="button" onclick="clearExpenseOutcomes()">
+            Clear Table
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+  
+          <div class="logo">
+            <a href="#">
+              <img src="https://i.postimg.cc/vm3dgtNx/Untitled-design.png" alt="Logo">
+            </a>
+          </div>
+  
+          <div class="contact">
+            <h3>Contact Us</h3>
+  
+            <h5><i class="fa-sharp fa-solid fa-location-dot"></i>Find Us</h5>
+            <p>314 Imam Haron Rd, Lansdowne, Cape Town, 7780</p>
+  
+            <h5><i class="fa fa-phone"></i>Call Us</h5>
+            <p>0215488756</p>
+  
+            <h5><i class="fa fa-envelope"></i>Mail Us</h5>
+            <p>dollarsense@gmail.com</p>
+  
+            <div class="socials">
+              <h5>Follow us</h5>
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter twitter-bg"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Expert Team</a></li>
+              <li><a href="#" id="contact-link">Contact us</a></li>
+            </ul>
+          </div>
+  
+          <div class="subscribe">
+            <h3>Subscribe</h3>
+            <p>
+              Don't miss to subscribe to our new feeds, <br>please kindly fill in the form below and be in the know all about budgeting.
+            </p>
+            <form action="https://formspree.io/f/maygyqgw" method="POST">
+              <input type="text" placeholder="Enter Email Address" required>
+              <button type="submit"><i class="fa-solid fa-paper-plane"></i>Subsribe</button>
+            </form>
+          </div>
+  
+          <!-- <div class="socials">
+            <span>Follow us</span>
+            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+          </div> -->
+  
+        </div>
+        <div class="copyright">
+          <p>
+            Copright©️ 2023, All Rights Reserved
+          </p>
+  
+          <p>
+            T&Cs Apply
+          </p>
+        </div>
+      </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/table.js"></script>
+  </body>
+</html>
