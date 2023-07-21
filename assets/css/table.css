@@ -27,24 +27,23 @@
     /* border: 2px solid white; */
     padding: 50px !important;
     display: flex !important;
-    margin-left: 300px;
-    
+
 }
 .expense-container{
     /* border: 2px solid white; */
-    margin-left: 380px;
+    margin-left: 80px;
 }
 .amount-container {
     /* border: 2px solid white; */
     align-items: center !important;
     padding: 20px !important;
-    margin-left: 800px !important;
+    margin-left: 500px !important;
     width: 600px !important;
 }
 .table-container {
      /* border: 2px solid white;  */
     padding: 20px !important;
-    margin-left: 830px !important;
+    margin-left: 500px !important;
     width: 600px !important;
 }
 button {
@@ -55,6 +54,10 @@ button {
     border: 3px solid white !important;
     color: white !important;
     border-radius: 12px !important;
+  }
+
+  .box {
+    width: 20rem !important;
   }
 .btn {
     border: 3px solid white !important;
@@ -115,7 +118,7 @@ h4 {
 .nav {
     display: flex !important;
     flex-direction: row !important;
-    gap: 57rem !important;
+    gap: 37rem !important;
     margin-left: 0rem !important;
   }
 
